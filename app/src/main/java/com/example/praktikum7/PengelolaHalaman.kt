@@ -32,7 +32,7 @@ fun PengelolaHalaman(
         val uiState by viewModel.uiState.collectAsState()
         NavHost(
             modifier = modifier.padding(isiPadding),
-            navController = navController, startDestination = Halaman.Formulir.name
+            navController = navController, startDestination = Halaman.Formulir.name 
         ) { }
 
     }
