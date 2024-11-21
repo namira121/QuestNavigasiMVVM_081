@@ -42,7 +42,11 @@ fun PengelolaHalaman(
                             id
                         )
                     },
-                ) { }
+                    onSubmitClicked = {
+                        viewModel.saveDataMahasiswa(it)
+                        navController.navigate(Halaman.Detail.name)
+                    }
+                )
             }
         }
 
