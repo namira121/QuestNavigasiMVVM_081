@@ -28,6 +28,6 @@ fun PengelolaHalaman(
     modifier: Modifier = Modifier
 ){
     Scaffold { isiPadding ->
-
+        val uiState by viewModel.uiState.collectAsState()
     }
 }
