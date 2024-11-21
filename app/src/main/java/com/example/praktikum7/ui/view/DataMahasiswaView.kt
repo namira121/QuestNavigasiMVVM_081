@@ -14,8 +14,9 @@ import com.example.praktikum7.model.DataMahasiswa
 @Composable
 fun DataMahasiswaView(
     modifier: Modifier = Modifier,
-    uiStateMahasiswa: DataMahasiswa)
-{
+    uiStateMahasiswa: DataMahasiswa,
+    onBackClick: () -> Unit = {}
+) {
     val listDatamhs = listOf(
         Pair("Nama", uiStateMahasiswa.nama),
         Pair("Gender", uiStateMahasiswa.gender),
