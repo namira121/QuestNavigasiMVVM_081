@@ -1,5 +1,6 @@
 package com.example.praktikum7
 
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -26,5 +27,7 @@ fun PengelolaHalaman(
     viewModel: MahasiswaViewModel = viewModel(),
     modifier: Modifier = Modifier
 ){
+    Scaffold { isiPadding ->
 
+    }
 }
