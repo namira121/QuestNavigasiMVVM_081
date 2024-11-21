@@ -1,5 +1,6 @@
 package com.example.praktikum7
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -29,5 +30,11 @@ fun PengelolaHalaman(
 ){
     Scaffold { isiPadding ->
         val uiState by viewModel.uiState.collectAsState()
+        NavHost(
+            modifier = modifier.padding(isiPadding),
+            navController = navController, startDestination = Halaman.Formulir.name
+        ) { }
+
     }
 }
+
