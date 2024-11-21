@@ -16,5 +16,5 @@ import com.example.praktikum7.ui.viewmodel.MahasiswaViewModel
 
 enum class Halaman {
     Formulir,
-    Detail
+    Detail,
 }
