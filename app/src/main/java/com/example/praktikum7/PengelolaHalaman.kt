@@ -18,3 +18,8 @@ enum class Halaman {
     Formulir,
     Detail,
 }
+
+@Composable
+fun PengelolaHalaman(){
+
+}
